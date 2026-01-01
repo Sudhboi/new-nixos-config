@@ -6,5 +6,6 @@
     ./kitty/kitty.nix
     ./git/git.nix
     ./alacritty/alacritty.nix
+    ./zoxide/zoxide.nix
   ];
 }
