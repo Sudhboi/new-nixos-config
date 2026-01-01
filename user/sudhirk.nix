@@ -5,5 +5,6 @@
     ./shell/sh.nix
     ./kitty/kitty.nix
     ./git/git.nix
+    ./alacritty/alacritty.nix
   ];
 }
