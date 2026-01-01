@@ -46,7 +46,6 @@
     # ".config/niri/config.kdl".source = ./niri/config.kdl;
   };
 
-  programs.yazi.enable = true;
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a

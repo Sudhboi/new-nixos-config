@@ -7,5 +7,6 @@
     ./git/git.nix
     ./alacritty/alacritty.nix
     ./zoxide/zoxide.nix
+    ./yazi/yazi.nix
   ];
 }
