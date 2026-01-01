@@ -10,6 +10,9 @@
       nrs = "sudo nixos-rebuild switch --flake ~/.dotfiles";
       hms = "home-manager switch --flake ~/.dotfiles";
     };
+    initContent = ''
+eval "$(zoxide init zsh)"
+    '';
   };
 
 }
