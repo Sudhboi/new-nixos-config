@@ -4,6 +4,15 @@
 
   programs.zsh = {
     enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "git"
+	"sudo"
+	"zsh-autosuggestions"
+        "zsh-syntax-highlighting"
+      ];
+    };
     shellAliases = {
       ll = "ls -la";
       ".." = "cd ..";
