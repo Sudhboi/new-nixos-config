@@ -5,8 +5,8 @@
     enable = true;
     enableZshIntegration = true;
 
-    home.file = [
+    home.file = {
       ".config/starship.toml".source = ./starship.toml
-    ];
+    };
   };
 }
