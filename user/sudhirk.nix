@@ -8,5 +8,6 @@
     ./alacritty/alacritty.nix
     ./zoxide/zoxide.nix
     ./yazi/yazi.nix
+    ./starship/starship.nix
   ];
 }
