@@ -40,4 +40,9 @@ eval "$(zoxide init zsh)"
     '';
   };
 
+  home.packages = [
+    pkgs.zsh-autosuggestions
+    pkgs.zsh-syntax-highlighting
+  ];
+
 }
