@@ -17,7 +17,7 @@
     };
   };
 
-  outputs = {self, nixpkgs, home-manager, ... }: 
+  outputs = inputs @ {self, nixpkgs, home-manager, zen-browser, ... }: 
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
