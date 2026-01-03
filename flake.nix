@@ -3,8 +3,18 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    # Zen Browser
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+	nixpkgs.follows = "nixpkgs";
+	home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = {self, nixpkgs, home-manager, ... }: 
@@ -25,6 +35,7 @@
       sudhirk = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 	modules = [ ./user/home.nix ];
+	extraSpecialArgs = { inherit inputs; };
       };
     };
   };

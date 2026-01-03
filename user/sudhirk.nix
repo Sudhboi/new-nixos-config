@@ -2,12 +2,7 @@
 
 {
   imports = [
-    ./shell/sh.nix
-    ./kitty/kitty.nix
-    ./git/git.nix
-    ./alacritty/alacritty.nix
-    ./zoxide/zoxide.nix
-    ./yazi/yazi.nix
-    ./starship/starship.nix
-  ];
+    ./shell/shell-programs.nix
+    ./apps/apps.nix
+    ];
 }
